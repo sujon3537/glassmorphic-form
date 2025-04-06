@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./images/bridge.jpg");
+  background-size: 100% 100vh;
+  background-repeat: no-repeat;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px);
+  border-radius: 8px;
+  color: #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  margin-bottom: 18px;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+input {
+  padding: 10px 30px;
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  caret-color: #fff;
+  color: #fff;
+}
+
+input::placeholder {
+  color: #ddd;
+}
+
+input[type="submit"] {
+  padding: 10px 12px;
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+input:focus {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper i {
+  font-size: 11px;
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+span {
+  color: yellow;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 6px 12px;
+  border-radius: 5px;
+  width: 45%;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+button i {
+  font-size: 11px;
+  margin-right: 8px;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  box-shadow: 1px 1px 8px #333;
+}
